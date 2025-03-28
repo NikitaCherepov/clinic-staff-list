@@ -1,0 +1,49 @@
+.container {
+  display: flex;
+  position: fixed;
+  justify-content: center;
+  align-items: center;
+
+  inset: 0;
+  background: rgba(128, 128, 128, 0.407);
+  z-index: 5;
+}
+
+.modal {
+  display: flex;
+  flex-direction: column;
+
+  background: white;
+  width: 100%;
+  max-width: 560px;
+  height: fit-content;
+  padding: 32px;
+  border-radius: 32px;
+  text-align: center;
+
+  gap: 10px;
+
+  &__buttons {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 16px;
+    button {
+      flex: 1;
+    }
+
+    &__confirm {
+      background: rgba(233, 242, 255, 1);
+    }
+    &__cancel {
+      background: rgba(0, 107, 255, 1);
+      color: white;
+    }
+  }
+  p {
+    line-height: 24px;
+    font-size: 1rem;
+    font-weight: 500;
+  }
+}

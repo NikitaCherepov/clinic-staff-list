@@ -1,0 +1,26 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+.dots {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  justify-content: center;
+}
+.page:hover {
+  background: var(--foreground);
+}
+.page {
+  &__chosen {
+    background: var(--foreground);
+  }
+}
+.arrow {
+  background: var(--foreground);
+  height: 100%;
+  img {
+    width: 5px;
+  }
+}

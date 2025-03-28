@@ -1,0 +1,49 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 80px 40px;
+  width: calc(100% - 80px);
+  gap: 50px;
+
+  gap: 25px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 700px;
+  &__field {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    input,
+    select {
+      height: 56px;
+    }
+  }
+  button {
+    background: rgba(196, 217, 247, 1);
+    color: white;
+  }
+}
+
+.breadСrumbs {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+
+  font-weight: 500;
+  a {
+    color: rgba(163, 163, 163, 1);
+    display: flex;
+    gap: 5px;
+  }
+  &__currentAddress,
+  &__slash {
+    color: rgba(0, 107, 255, 1);
+  }
+}

@@ -1,0 +1,103 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  flex: 1;
+
+  position: relative;
+  gap: 40px;
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  h1 {
+    font-weight: 500;
+  }
+  a {
+    background: rgba(0, 107, 255, 1);
+    color: white;
+  }
+}
+
+.table {
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+}
+
+.headerRow {
+  background: var(--foreground);
+  border-radius: var(--border-radius-standart);
+
+  div {
+    color: var(--light-color);
+  }
+}
+
+.headerRow,
+.userRow {
+  display: grid;
+  grid-template-columns: 0.5fr 0.8fr 1.5fr 1.5fr 1.5fr 1.25fr 1.3fr 2fr 1.5fr 1fr 1.5fr 1.5fr 2fr 0.5fr 0.5fr 0.5fr;
+  align-items: center;
+  gap: 0px;
+  padding: 0 16px;
+  p {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  div {
+    padding: 16px;
+    overflow: hidden;
+  }
+}
+
+.userRow {
+  border-bottom: 3px solid var(--foreground);
+  div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: var(--dark-color);
+  }
+
+  &__fireButton {
+    background: rgba(233, 242, 255, 1);
+  }
+  &__icon {
+    width: 25px;
+  }
+}
+
+.pagination {
+  margin-top: auto;
+}
+
+.filters {
+  display: flex;
+  flex-direction: row;
+
+  width: 100%;
+
+  gap: 24px;
+}
+
+.checkBoxFilters {
+  display: flex;
+  flex-direction: row;
+
+  width: 100%;
+
+  gap: 24px;
+
+  &__filter {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    gap: 10px;
+  }
+}
